@@ -27,7 +27,7 @@ body {
 }
 
 section {
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 
 .icon-and-title {
@@ -41,7 +41,7 @@ header {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin: 0 2rem;
     padding-top: 1rem;
 }
 
@@ -53,12 +53,23 @@ header #icon {
     margin: 0 2rem;
 }
 
-header a {
+header nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
     text-decoration: none;
     color: inherit;
     padding: 0 2rem;
     font-size: 1.8rem;
     font-weight: 400;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
 }
 
 hr {
@@ -125,20 +136,24 @@ hr {
 }
 
 .video-section .video-container {
-    background-color: var(--border-color);
+    max-width: 560px;
+}
+
+.video-section .video-container .video {
+    border: 1.5rem solid var(--border-color);
     text-align: center;
-    padding: 1rem;
-    border-radius: 10px;
     overflow: hidden;
+    border-radius: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.video-section h1 {
+    text-align: center;
     margin: 0 3rem;
 }
 
-.video-section #video {
-    border-radius: 5px;
-    max-width: 100%;
-}
-
-.video-section h2 {
+.video-section h3 {
     padding: 0 2rem;
     text-align: center;
 }
@@ -156,18 +171,12 @@ hr {
     }
 
     nav {
-        justify-content: center;
         flex: 0;
         margin-top: 3rem;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    nav a {
-        display: block;
-        text-align: center;
-        margin: 1.5rem 0;
-    }
     #hero-header {
         display: block;
         text-align: center;
