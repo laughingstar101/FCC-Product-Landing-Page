@@ -4,7 +4,7 @@
         <title>Gym Landing Page</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="style.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -14,7 +14,7 @@
     </head>
     <body>
         <section class="nav-bar-section">
-            <header id="header">
+            <header class="nav-bar">
                 <div class="icon-and-title">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -28,15 +28,15 @@
                             d="M547.37-80.89 501.3-127.2l142-142-374.1-374.1-142 142-46.31-46.07 56-57.52-56-56 85.48-85.48-42-41.52 47.74-47.74 42.52 41 84.48-84.48 56 56 57.52-56 46.3 46.07-142 142 374.11 374.11 142-142 46.07 46.3-56 57.52 56 56-86.48 86.48 42 41.52-47.74 47.74-41.52-42-84.48 84.48-56-56-57.52 56Z"
                         />
                     </svg>
-                    <h1>COOL GYM</h1>
+                    <h1 id="gym-title">COOL GYM</h1>
                 </div>
                 <nav id="nav-bar">
-                    <a href="#benefits" id="benefit-link" class="nav-link"
-                        >Benefits</a
+                    <a href="#welcome" id="welcome-link" class="nav-link"
+                        >Welcome</a
                     >
                     <a
                         href="#testimonials"
-                        id="testimonials-link"
+                        id="testimonial-link"
                         class="nav-link"
                         >Testimonials</a
                     >
@@ -48,68 +48,188 @@
         </section>
         <hr />
         <section class="hero-section">
-            <h1 id="hero-header">A GYM THAT CATERS TO YOUR NEEDS</h1>
-            <div class="img-container">
-                <div class="track">
-                    <img
-                        class="hero-img"
-                        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    />
-                    <img
-                        class="hero-img"
-                        src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
-                    />
-                    <img
-                        class="hero-img"
-                        src="https://images.unsplash.com/photo-1623874514711-0f321325f318?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
-                    />
-                    <img
-                        class="hero-img"
-                        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    />
-                    <img
-                        class="hero-img"
-                        src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
-                    />
-                    <img
-                        class="hero-img"
-                        src="https://images.unsplash.com/photo-1623874514711-0f321325f318?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
-                    />
+            <header id="header">
+                <h1>A GYM THAT CATERS TO YOUR NEEDS</h1>
+                <div class="img-container">
+                    <div class="track">
+                        <img
+                            class="hero-img"
+                            id="header-img"
+                            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        />
+                        <img
+                            class="hero-img"
+                            id="header-img"
+                            src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
+                        />
+                        <img
+                            class="hero-img"
+                            id="header-img"
+                            src="https://images.unsplash.com/photo-1623874514711-0f321325f318?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
+                        />
+                        <img
+                            class="hero-img"
+                            id="header-img"
+                            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        />
+                        <img
+                            class="hero-img"
+                            id="header-img"
+                            src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
+                        />
+                        <img
+                            class="hero-img"
+                            id="header-img"
+                            src="https://images.unsplash.com/photo-1623874514711-0f321325f318?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
+                        />
+                    </div>
                 </div>
+            </header>
+            <div class="summary-text" id="welcome">
+                <h3>Welcome to Cool Gym: Your Fitness Home Away from Home</h3>
+                <p>
+                    At Cool Gym, we believe that fitness is a personal journey,
+                    and every individual has unique needs and goals. That's why
+                    we've created a gym that caters to you - not the other way
+                    around. Our state-of-the-art facilities, expert trainers,
+                    and supportive community are all designed to help you
+                    achieve your fitness aspirations, no matter what they may
+                    be. Whether you're a seasoned athlete or just starting out,
+                    we've got everything you need to succeed. From cutting-edge
+                    equipment to innovative group classes, our gym is equipped
+                    to help you reach your full potential. And with flexible
+                    membership plans and personalized support, you can trust
+                    that you're in good hands.
+                </p>
+                <h4>Experience the Cool Gym difference:</h4>
+                <ul class="summary-list">
+                    <li class="list-item">
+                        State-of-the-art facilities and equipment
+                    </li>
+                    <li class="list-item">
+                        Expert trainers and personalized support
+                    </li>
+                    <li class="list-item">
+                        Innovative group classes and workshops
+                    </li>
+                    <li class="list-item">
+                        Flexible membership plans to fit your lifestyle
+                    </li>
+                    <li class="list-item">
+                        A supportive community that motivates and inspires
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="video-section">
             <!--! SAM SULEK!!!!! -->
-            <h1>And now, a word from our valued customers</h1>
-            <div class="video-container" id="testimonials">
-                <h3>Sam Sulek:</h3>
-                <iframe
-                    class="video"
-                    id="video"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/eiXX7-FSRLc?si=wjLxL6wqh5cFdk84"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                ></iframe>
-                <h3>Larry Wheels:</h3>
-                <iframe
-                    class="video"
-                    id="video2"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/gio-O-3ZvcE?si=6pwM0OdVSPzl9AP_"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                ></iframe>
+            <h1 id="testimonials">And now, a word from our valued customers</h1>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <h3>Sam Sulek:</h3>
+                    <iframe
+                        class="video"
+                        id="video"
+                        width="800"
+                        height="450"
+                        src="https://www.youtube.com/embed/eiXX7-FSRLc?si=wjLxL6wqh5cFdk84"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <h3>Larry Wheels:</h3>
+                    <iframe
+                        class="video"
+                        id="video2"
+                        width="800"
+                        height="450"
+                        src="https://www.youtube.com/embed/gio-O-3ZvcE?si=6pwM0OdVSPzl9AP_"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <h3>Leo Wang:</h3>
+                    <iframe
+                        class="video"
+                        width="800"
+                        height="450"
+                        src="https://www.youtube.com/embed/dGQRFTXh4lY?si=NKALAOyYo0asrO3n"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
             </div>
         </section>
-        <script></script>
+        <section class="pricing-and-plans">
+            <div class="plans-container" id="pricing">
+                <div class="plans">
+                    <h3 class="plan-name">Basic Fit</h3>
+                    <div class="plan-desc">
+                        <p class="price">$29.90/month</p>
+                        <ul>
+                            <li>
+                                Access to gym facilities during business hours
+                            </li>
+                            <li>
+                                Limited access to group classes (max 2 per week)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plans">
+                    <h3 class="plan-name">Fit Plus</h3>
+                    <div class="plan-desc">
+                        <p class="price">$49.90/month</p>
+                        <ul>
+                            <li>Access to gym facilities 24/7</li>
+                            <li>Unlimited access to group classes</li>
+                            <li>1 free personal training session per month</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plans">
+                    <h3 class="plan-name">Fit Pro</h3>
+                    <div class="plan-desc">
+                        <p class="price">$79.90/month</p>
+                        <ul>
+                            <li>Access to gym facilities 24/7</li>
+                            <li>Unlimited access to group classes</li>
+                            <li>2 free personal training sessions per month</li>
+                            <li>
+                                Priority access to new equipment and facilities
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h1>Interested?</h1>
+                <input
+                    class="email-input"
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                />
+                <input
+                    class="btn"
+                    type="button"
+                    value="GET STARTED"
+                    type="submit"
+                />
+            </form>
+        </section>
     </body>
 </html>
