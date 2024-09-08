@@ -40,10 +40,13 @@ section {
     align-items: center;
 }
 
-.nav-bar {
+#header {
     position: fixed;
     top: 0;
+    right: 0;
     width: 100vw;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
@@ -51,18 +54,25 @@ section {
     padding-top: 1rem;
     z-index: 1000;
     text-align: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-.nav-bar h1 {
+#header-img {
+    visibility: hidden;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#header h1 {
     margin-left: -1rem;
 }
 
-.nav-bar #icon {
+#header #icon {
     margin: 0 2rem;
 }
 
-.nav-bar nav {
+#nav-bar {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
@@ -70,7 +80,7 @@ section {
     align-items: center;
 }
 
-.nav-bar nav a {
+#nav-bar a {
     text-decoration: none;
     color: inherit;
     padding: 0 2rem;
@@ -82,7 +92,7 @@ section {
     transition: 400ms cubic-bezier(0.1, 0.71, 0.32, 0.89);
 }
 
-.nav-bar nav a:hover {
+#nav-bar a:hover {
     transform: scale(115%);
 }
 
@@ -100,7 +110,7 @@ section {
     font-weight: 400;
 }
 
-#header h1 {
+#title-header {
     text-align: center;
 }
 
@@ -318,8 +328,8 @@ section {
     }
     .plans {
         padding-bottom: 0;
-        height: 300px;
-        width: 500px;
+        height: 325px;
+        width: min(450px, 80vw);
     }
 }
 
@@ -330,7 +340,6 @@ section {
     #header {
         display: block;
         text-align: center;
-        margin: 0 2rem;
     }
     .video-section h2 {
         display: block;
@@ -338,6 +347,9 @@ section {
     }
     header nav a {
         text-align: center;
+    }
+    .plans {
+        height: 400px;
     }
 }
 

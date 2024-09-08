@@ -14,7 +14,11 @@
     </head>
     <body>
         <section class="nav-bar-section">
-            <header class="nav-bar">
+            <header id="header">
+                <img
+                    id="header-img"
+                    src="https://www.pngwing.com/en/search?q=invisible"
+                />
                 <div class="icon-and-title">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -46,45 +50,38 @@
                 </nav>
             </header>
         </section>
-        <hr />
         <section class="hero-section">
-            <header id="header">
-                <h1>A GYM THAT CATERS TO YOUR NEEDS</h1>
+            <div>
+                <h1 id="title-header">A GYM THAT CATERS TO YOUR NEEDS</h1>
                 <div class="img-container">
                     <div class="track">
                         <img
                             class="hero-img"
-                            id="header-img"
                             src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         />
                         <img
                             class="hero-img"
-                            id="header-img"
                             src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
                         />
                         <img
                             class="hero-img"
-                            id="header-img"
                             src="https://images.unsplash.com/photo-1623874514711-0f321325f318?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
                         />
                         <img
                             class="hero-img"
-                            id="header-img"
                             src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         />
                         <img
                             class="hero-img"
-                            id="header-img"
                             src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
                         />
                         <img
                             class="hero-img"
-                            id="header-img"
                             src="https://images.unsplash.com/photo-1623874514711-0f321325f318?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
                         />
                     </div>
                 </div>
-            </header>
+            </div>
             <div class="summary-text" id="welcome">
                 <h3>Welcome to Cool Gym: Your Fitness Home Away from Home</h3>
                 <p>
@@ -220,14 +217,16 @@
                 <input
                     class="email-input"
                     type="email"
+                    id="email"
+                    name="email"
                     placeholder="Enter your email address"
                     required
                 />
                 <input
                     class="btn"
-                    type="button"
-                    value="GET STARTED"
+                    id="submit"
                     type="submit"
+                    value="GET STARTED"
                 />
             </form>
         </section>
